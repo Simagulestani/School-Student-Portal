@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle">
+    Toggle Theme
+</button>
+    </nav>
+
+    <div class="container">
+
+        <h1>Student Profile Dashboard</h1>
+
+        <div class="profile-card">
+
+            <img src="student.png"
+                 alt="Student Photo"
+                 id="studentPhoto" width="200">
+
+            <h2 id="studentName">Fatime Azizi</h2>
+
+            <p><strong>Age:</strong> 21</p>
+
+            <p><strong>Grade Level:</strong> Intermediate</p>
+
+            <p>
+                <strong>Status:</strong>
+                <span id="studentStatus">Active</span>
+            </p>
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-panel">
+
+            <h2>Contact Information</h2>
+
+            <button id="showEmailBtn">Show Email</button>
+
+            <button id="showPhoneBtn">Show Phone</button>
+
+            <button id="hideContactBtn">Hide Contact Info</button>
+
+            <div id="contactInfo"></div>
+
+        </div>
+
+        <!-- Status Update -->
+        <div class="status-update">
+
+            <h2>Update Student Status</h2>
+
+            <input type="text"
+                   id="statusInput"
+                   placeholder="Enter new status">
+
+            <button id="updateStatusBtn">
+                Update Status
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

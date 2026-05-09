@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle">
+    Toggle Theme
+</button>
+    </nav>
+
+    <div class="container">
+
+        <h1>Available Courses</h1>
+
+        <!---button-->
+        <div class="filter-buttons">
+
+            <button class="filterBtn" data-grade="All">
+                All Courses
+            </button>
+
+            <button class="filterBtn" data-grade="Grade 10">
+                Beginner
+            </button>
+
+            <button class="filterBtn" data-grade="Grade 11">
+                Intermediate
+            </button>
+
+        </div>
+
+         <input type="text"
+       id="searchCourse"
+       placeholder="Search course by name">
+
+        <!-- Courses Container -->
+        <div id="coursesContainer"></div>
+
+        <!-- Course Details -->
+        <div id="courseDetails"></div>
+
+        <!-- Add New Course -->
+        <div class="course-form">
+
+            <h2>Add New Course</h2>
+
+            <input type="text"
+                   id="courseName"
+                   placeholder="Course Name">
+
+            <input type="text"
+                   id="instructor"
+                   placeholder="Instructor">
+
+            <input type="text"
+                   id="gradeLevel"
+                   placeholder="Grade Level">
+
+            <input type="text"
+                   id="description"
+                   placeholder="Short Description">
+
+            <input type="text"
+                   id="image"
+                   placeholder="Image URL">
+
+            <button id="addCourseBtn">
+                Add Course
+            </button>
+
+            <p id="courseError"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

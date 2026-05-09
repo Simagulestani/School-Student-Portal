@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle">
+    Toggle Theme
+</button>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container">
+
+        <h1>Mirwali Girls High School</h1>
+        <h2>Welcome to Student Enrollment Page</h2>
+
+        <!-- Enrollment Form -->
+        <div class="form-box">
+
+            <label>Student Name</label>
+            <input type="text" id="studentName">
+
+            <label>Age</label>
+            <input type="number" id="age">
+
+            <label>Grade Level</label>
+            <input type="text" id="gradeLevel">
+
+            <button id="enrollBtn">Enroll Student</button>
+
+        </div>
+
+        <!-- Error Message -->
+        <p id="errorMessage"></p>
+
+        <!-- Welcome Message -->
+        <h3 id="welcomeMessage"></h3>
+
+        <!-- Student Summary -->
+        <div id="studentSummary"></div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle">
+    Toggle Theme
+</button>
+    </nav>
+<!--contact form -->
+    <div class="container">
+
+        <h1>Contact The School</h1>
+
+        <div class="contact-form">
+
+            <input type="text"
+                   id="contactName"
+                   placeholder="Your Name">
+
+            <input type="email"
+                   id="contactEmail"
+                   placeholder="Your Email">
+
+            <textarea id="contactMessage"
+                      placeholder="Your Message"></textarea>
+
+            <button id="sendMessageBtn">
+                Send Message
+            </button>
+
+            <p id="contactResult"></p>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
